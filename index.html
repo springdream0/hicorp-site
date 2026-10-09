@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>에이치아이 HI Corp</title>
+<title>HI Corp — Human Intelligence</title>
 <meta name="description" content="에이치아이(HI Corp) — 과학으로 사람의 행동을 읽는 책을 펴내고, 소프트웨어를 개발·판매합니다.">
-<meta property="og:title" content="에이치아이 HI Corp">
+<meta property="og:title" content="HI Corp — Human Intelligence">
 <meta property="og:description" content="출판 · 소프트웨어 개발 — 『행동의 블랙홀』 시리즈">
 <meta property="og:image" content="https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/1400000917442.jpg">
 <meta property="og:url" content="https://hicorp.biz/">
@@ -122,6 +122,23 @@
   footer{padding-block:48px;font-size:13px;color:var(--muted)}
   footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;border-top:1px solid var(--line);padding-top:28px}
 
+
+  /* about */
+  .about{padding-block:110px 40px}
+  .about-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:64px;align-items:center}
+  .about h2{font-size:clamp(28px,3.8vw,42px);line-height:1.3;margin:12px 0 22px}
+  .about .gold{color:var(--gold-d)}
+  .about p{color:var(--muted);font-size:16.5px;margin:0 0 14px}
+  .about p b{color:var(--ink)}
+  .hi-mark{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .hi-mark div{background:var(--navy);color:#fff;border-radius:22px;padding:30px 24px 26px;display:flex;flex-direction:column}
+  .hi-mark div:nth-child(2){background:var(--gold);color:var(--navy);transform:translateY(28px)}
+  .hi-mark b{font-family:"Noto Serif KR",serif;font-size:88px;line-height:1;font-weight:900}
+  .hi-mark span{font-size:18px;font-weight:700;margin-top:14px;letter-spacing:.02em}
+  .hi-mark small{font-size:13.5px;opacity:.75;margin-top:2px}
+  .hero p b{color:var(--gold);font-weight:700;opacity:1}
+  @media (max-width:900px){.about-grid{grid-template-columns:1fr;gap:40px}.hi-mark{max-width:420px}}
+
   /* reveal */
   .rv{opacity:0;transform:translateY(24px);transition:opacity .8s ease,transform .8s ease}
   .rv.on{opacity:1;transform:none}
@@ -148,8 +165,9 @@
 
 <header id="top">
   <div class="wrap">
-    <a class="logo" href="#"><i>HI</i>HI Corp <small>에이치아이</small></a>
+    <a class="logo" href="#"><i>HI</i>HI Corp <small>Human Intelligence</small></a>
     <nav>
+      <a href="#about">회사 소개</a>
       <a href="#business">사업 분야</a>
       <a href="#books">출간 도서</a>
       <a href="#contact">문의</a>
@@ -160,9 +178,9 @@
 <div class="hero">
   <div class="wrap">
     <div>
-      <span class="eyebrow">Publishing · Software Development</span>
-      <h1>읽히는 지식과<br><em>쓰이는</em> 소프트웨어를 만듭니다.</h1>
-      <p>에이치아이는 과학적 근거로 현대인의 행동을 풀어내는 책을 펴내는 출판사이자, 업무에 필요한 소프트웨어를 직접 개발하고 판매하는 회사입니다.</p>
+      <span class="eyebrow">HI · Human Intelligence</span>
+      <h1>사람을 이해하는 지능,<br>사람을 <em>돕는</em> 지능.</h1>
+      <p>HI는 <b>Human Intelligence</b>의 약자입니다. 사람이 왜 그렇게 행동하는지 과학으로 풀어내는 책을 펴내고, 사람의 일을 덜어 주는 소프트웨어를 직접 개발합니다.</p>
       <div class="btns">
         <a class="btn gold" href="#books">출간 도서 보기 →</a>
         <a class="btn line" href="#contact">문의하기</a>
@@ -176,24 +194,41 @@
   </div>
 </div>
 
+<section id="about" class="about">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="rv">
+        <span class="eyebrow">About</span>
+        <h2 class="serif">HI, <span class="gold">Human Intelligence</span></h2>
+        <p>인공지능의 시대에도 출발점은 사람입니다. 사람이 무엇에 끌리고, 왜 무너지고, 어떻게 다시 일어서는지 이해해야 좋은 책도, 좋은 도구도 만들 수 있다고 믿습니다.</p>
+        <p>에이치아이는 그 이해를 두 가지 방식으로 세상에 내놓습니다. 하나는 <b>책</b>, 하나는 <b>소프트웨어</b>입니다.</p>
+      </div>
+      <div class="hi-mark rv" aria-hidden="true">
+        <div><b>H</b><span>Human</span><small>사람을 이해한다</small></div>
+        <div><b>I</b><span>Intelligence</span><small>지능으로 돕는다</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section id="business">
   <div class="wrap">
     <div class="head rv">
       <span class="eyebrow">Business</span>
-      <h2>두 가지 일을 합니다</h2>
+      <h2>사람을 향한 두 가지 일</h2>
       <p>출판과 소프트웨어, 서로 다른 두 분야지만 기준은 같습니다. 근거가 분명하고, 실제로 쓸모 있을 것.</p>
     </div>
     <div class="biz">
       <div class="card rv">
         <div class="ico"><svg viewBox="0 0 24 24"><path d="M4 19.5V5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2.5z"/><path d="M8 7h7M8 11h5"/></svg></div>
-        <h3>출판</h3>
+        <h3>출판 <small style="font-size:13px;color:var(--gold-d);font-weight:500">— 사람을 이해하는 지능</small></h3>
         <p>진화생물학과 내분비학의 연구를 바탕으로, 우리가 왜 그렇게 행동하는지를 쉽게 풀어 쓴 교양서를 기획하고 펴냅니다.</p>
         <ul><li>기획 · 편집</li><li>교양 · 과학</li><li>종이책(POD)</li><li>전자책</li></ul>
         <div class="big">冊</div>
       </div>
       <div class="card rv">
         <div class="ico"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4M8 9l2 2-2 2M13 13h3"/></svg></div>
-        <h3>소프트웨어 개발 · 판매</h3>
+        <h3>소프트웨어 개발 · 판매 <small style="font-size:13px;color:var(--gold-d);font-weight:500">— 사람을 돕는 지능</small></h3>
         <p>반복되는 일을 줄여 주는 업무용 소프트웨어를 직접 개발하고 판매합니다. 맞춤 개발 의뢰와 도입 상담도 받습니다.</p>
         <ul><li>자체 개발</li><li>업무 자동화</li><li>맞춤 개발</li><li>라이선스 판매</li></ul>
         <div class="big">SW</div>
@@ -283,7 +318,7 @@
 
 <footer>
   <div class="wrap">
-    <span>주식회사 에이치아이 (HI Corp) · 출판 · 소프트웨어 개발 및 판매</span>
+    <span>주식회사 에이치아이 (HI Corp · Human Intelligence) · 출판 · 소프트웨어 개발 및 판매</span>
     <span>© 2026 HI Corp. All rights reserved.</span>
   </div>
 </footer>
