@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>에이치아이 HI Corp</title>
+<meta name="description" content="에이치아이(HI Corp) — 출판과 소프트웨어 판매">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#1b1d22; --muted:#5d6370; --line:#e4e2dc; --bg:#faf9f6; --card:#ffffff;
+    --accent:#1f4e79; --accent-soft:#e8eef5;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:"Noto Sans KR",system-ui,-apple-system,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+    line-height:1.7;-webkit-font-smoothing:antialiased}
+  a{color:inherit}
+  .wrap{max-width:1040px;margin:0 auto;padding-inline:24px}
+
+  header{position:sticky;top:0;z-index:10;background:rgba(250,249,246,.92);
+    backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  header .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+  .logo{font-weight:700;font-size:20px;letter-spacing:.02em;text-decoration:none}
+  .logo span{color:var(--accent)}
+  nav{display:flex;gap:24px;font-size:15px}
+  nav a{text-decoration:none;color:var(--muted)}
+  nav a:hover{color:var(--ink)}
+
+  .hero{padding-block:120px 96px}
+  .eyebrow{font-size:13px;font-weight:500;letter-spacing:.18em;color:var(--accent);text-transform:uppercase}
+  .hero h1{font-family:"Noto Serif KR",serif;font-size:clamp(32px,5vw,52px);line-height:1.3;
+    margin:16px 0 20px;letter-spacing:-.01em}
+  .hero p{font-size:18px;color:var(--muted);max-width:560px;margin:0 0 36px}
+  .btn{display:inline-block;padding:13px 26px;border-radius:999px;background:var(--ink);color:#fff;
+    text-decoration:none;font-weight:500;font-size:15px}
+  .btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--ink);margin-left:8px}
+
+  section{padding-block:88px;border-top:1px solid var(--line)}
+  h2{font-family:"Noto Serif KR",serif;font-size:30px;margin:8px 0 40px}
+
+  .biz{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:32px}
+  .card .num{font-size:13px;color:var(--accent);font-weight:700;letter-spacing:.1em}
+  .card h3{font-size:22px;margin:10px 0 12px}
+  .card p{color:var(--muted);margin:0}
+
+  .books{display:grid;grid-template-columns:1fr;gap:24px}
+  .book{display:flex;gap:22px;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px}
+  .cover{flex:0 0 120px;width:120px;height:auto;align-self:flex-start;border-radius:3px 6px 6px 3px;
+    box-shadow:0 8px 18px rgba(0,0,0,.16)}
+  .series{font-size:12px;color:var(--accent);margin:0 0 4px;font-weight:500}
+  .buy{display:inline-block;margin-top:14px;font-size:14px;font-weight:500;color:var(--accent);text-decoration:none}
+  .buy:hover{text-decoration:underline}
+  .book h3{font-size:18px;margin:0 0 6px;line-height:1.45}
+  .meta{font-size:13px;color:var(--muted);margin:0 0 12px}
+  .book p.desc{font-size:14.5px;color:var(--muted);margin:0}
+
+  .contact{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:24px;
+    background:var(--accent);color:#fff;border-radius:20px;padding:48px}
+  .contact h2{color:#fff;margin:0 0 8px}
+  .contact p{margin:0;opacity:.85}
+  .mail{font-size:22px;font-weight:700;text-decoration:none;border-bottom:2px solid rgba(255,255,255,.5)}
+
+  footer{padding-block:40px;font-size:13px;color:var(--muted)}
+  footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+
+  @media (max-width:600px){
+    nav{display:none}
+    .hero{padding-block:72px 64px}
+    section{padding-block:64px}
+    .book{flex-direction:column}
+    .cover{width:110px}
+    .contact{padding:32px}
+    .btn.ghost{margin:10px 0 0}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="#">HI <span>Corp</span></a>
+    <nav>
+      <a href="#business">사업 분야</a>
+      <a href="#books">출간 도서</a>
+      <a href="#contact">문의</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap hero">
+    <div class="eyebrow">에이치아이 · HI Corp</div>
+    <h1>좋은 지식을 책으로,<br>필요한 도구를 소프트웨어로.</h1>
+    <p>에이치아이는 출판과 소프트웨어 판매를 하는 회사입니다. 과학적 근거를 바탕으로 한 교양서를 펴내고, 업무에 필요한 소프트웨어를 공급합니다.</p>
+    <a class="btn" href="#books">출간 도서 보기</a>
+    <a class="btn ghost" href="#contact">문의하기</a>
+  </div>
+
+  <section id="business">
+    <div class="wrap">
+      <div class="eyebrow">Business</div>
+      <h2>사업 분야</h2>
+      <div class="biz">
+        <div class="card">
+          <div class="num">01</div>
+          <h3>출판</h3>
+          <p>진화생물학과 내분비학의 관점에서 현대인의 행동을 풀어내는 교양서를 기획·출간합니다. 종이책과 전자책으로 만나보실 수 있습니다.</p>
+        </div>
+        <div class="card">
+          <div class="num">02</div>
+          <h3>소프트웨어 판매</h3>
+          <p>개인과 기업에 필요한 소프트웨어를 공급하고 도입을 돕습니다. 제품과 견적 문의는 이메일로 받고 있습니다.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="books">
+    <div class="wrap">
+      <div class="eyebrow">Books</div>
+      <h2>출간 도서 <small style="font-family:'Noto Sans KR';font-size:15px;color:var(--muted);font-weight:400">· 종이책(POD) · 전자책</small></h2>
+      <div class="books">
+        <article class="book">
+          <img class="cover" src="https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/1400000917442.jpg" alt="행동의 블랙홀 : 다이어트 표지" loading="lazy">
+          <div>
+            <p class="series">진화와 호르몬 관점에서 바라보는 행동의 블랙홀</p>
+            <h3>다이어트</h3>
+            <p class="meta">서화정 지음 · 2025.08.29 · ISBN 979-11-992756-0-7</p>
+            <p class="desc">다이어트가 실패하는 건 의지가 약해서가 아니라, 수십만 년 전에 만들어진 몸의 설계도와 지금의 환경이 맞지 않기 때문입니다. 인슐린·렙틴·코르티솔·도파민의 작동 원리를 진화의 관점에서 풀어냅니다.</p>
+            <a class="buy" href="https://product.kyobobook.co.kr/detail/S000218201540" target="_blank" rel="noopener">교보문고에서 보기 →</a>
+          </div>
+        </article>
+        <article class="book">
+          <img class="cover" src="https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/1400000917510.jpg" alt="행동의 블랙홀 : 디지털 중독 표지" loading="lazy">
+          <div>
+            <p class="series">진화와 호르몬 관점에서 바라보는 행동의 블랙홀</p>
+            <h3>디지털 중독</h3>
+            <p class="meta">서화정 지음 · 2025.09.05 · ISBN 979-11-992756-1-4</p>
+            <p class="desc">스마트폰을 내려놓지 못하는 건 의지 탓이 아닙니다. 도파민 보상 회로와 코르티솔 반응이 디지털 기술과 만나 주의력을 빼앗는 과정을 보여주고, 삶의 주도권을 되찾는 방법을 제시합니다.</p>
+            <a class="buy" href="https://product.kyobobook.co.kr/detail/S000218090492" target="_blank" rel="noopener">교보문고에서 보기 →</a>
+          </div>
+        </article>
+        <article class="book">
+          <img class="cover" src="https://contents.kyobobook.co.kr/sih/fit-in/400x0/pdt/1400000920848.jpg" alt="행동의 블랙홀 : 혐오의 시대 표지" loading="lazy">
+          <div>
+            <p class="series">진화와 호르몬 관점에서 바라보는 행동의 블랙홀</p>
+            <h3>혐오의 시대</h3>
+            <p class="meta">서화정 지음 · 2025.10.03 · ISBN 979-11-992756-5-2</p>
+            <p class="desc">혐오는 개인의 성격 문제가 아니라 오래된 생존 본능, 호르몬, 디지털 알고리즘이라는 세 톱니바퀴가 맞물린 결과입니다. 원리를 진단하고 개인과 관계를 다시 잇는 구체적인 방법까지 다룹니다.</p>
+            <a class="buy" href="https://product.kyobobook.co.kr/detail/S000218185433" target="_blank" rel="noopener">교보문고에서 보기 →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" style="border-top:0">
+    <div class="wrap">
+      <div class="contact">
+        <div>
+          <h2>문의</h2>
+          <p>출판·원고 투고·소프트웨어 구매 문의를 받습니다.</p>
+        </div>
+        <a class="mail" href="mailto:hi@hicorp.biz">hi@hicorp.biz</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 에이치아이 (HI Corp). All rights reserved.</span>
+    <span>출판 · 소프트웨어 판매</span>
+  </div>
+</footer>
+
+</body>
+</html>
